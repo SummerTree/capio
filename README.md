@@ -41,12 +41,13 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   - camera timer (3x, 10x)
   
 ### TODO:
+  - inApp tutorial 
+  - sexy splash screen entry
+  - better notifications and UI response feedback
   - torch mode on-off
   - TimeLapse
   - HDR
   - Live
-  - inApp tutorial 
-  - better notifications and UI response feedback
   - settings presets
-  - app's fast access from phone's widgets view
+  - app's fast access from phone's widgets view (if that's even possible?)
   - AppleWatch support (remote photo app control)
