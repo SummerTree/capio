@@ -49,3 +49,4 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   - better notifications and UI response feedback
   - settings presets
   - app's fast access from phone's widgets view
+  - AppleWatch support (remote photo app control)
