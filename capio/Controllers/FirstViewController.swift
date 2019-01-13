@@ -122,7 +122,7 @@ class FirstViewController:
             optionsMenu?.showIndicator(.right, position: .bottom, offset: 50)
         }
 
-        gridManager = GridManager.init(_gridView: gridHostView, _storyBoard: self.storyboard!, _parentViewDimentions: gridHostView.bounds)
+        gridManager = GridManager.init(gridView: gridHostView, storyBoard: self.storyboard!, parentViewDimensions: gridHostView.bounds)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -622,7 +622,7 @@ class FirstViewController:
             case "orientationRawState":
                 self.captureSessionManager.onLockUnLockOrientation((self.cameraSecondaryOptions?.orientationState)! as OrientationStates)
             case "gridRawState":
-                switch (self.cameraSecondaryOptions?.gridState)! as GridFactors {
+                switch (self.cameraSecondaryOptions?.gridState)! as GridFactor {
                 case .off:
                     gridManager.gridFactor = .off
                 case .double:
