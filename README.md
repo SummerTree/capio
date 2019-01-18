@@ -41,8 +41,9 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   - camera timer (3x, 10x)
   
 ### TODO:
-  - inApp tutorial 
-  - sexy splash screen entry
+  - back to all auto mode
+  - 3d motion feature point tracking
+  - inApp tutorial (maybe)
   - better notifications and UI response feedback
   - torch mode on-off
   - TimeLapse
