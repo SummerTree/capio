@@ -10,23 +10,27 @@
 		1B494BC1E74356A672F0C38E /* Pods_capioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E700FAE66DD075380AB694 /* Pods_capioTests.framework */; };
 		3571FA3147F413E95928F1CE /* Pods_capioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE02DE45CE8EB6D4AEF93DD /* Pods_capioUITests.framework */; };
 		3706CCA01E5D4D8300E4EC77 /* RightMenuSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706CC9F1E5D4D8300E4EC77 /* RightMenuSetViewController.swift */; };
-		370B6D2C1E82B2FF00B51A1B /* ResolutionSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370B6D2B1E82B2FF00B51A1B /* ResolutionSideMenuViewController.swift */; };
 		372D1DA21E647014006D740B /* GridManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D1DA11E647014006D740B /* GridManager.swift */; };
 		3740AE141E5001E4004DE9BE /* ResolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740AE131E5001E4004DE9BE /* ResolutionViewController.swift */; };
 		3740AE211E502A24004DE9BE /* MenuHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740AE201E502A24004DE9BE /* MenuHostView.swift */; };
-		374B45911E3C518E00BB727F /* CameraMenuContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B458F1E3C518E00BB727F /* CameraMenuContentController.swift */; };
-		374B45921E3C518E00BB727F /* CameraMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B45901E3C518E00BB727F /* CameraMenuTableViewCell.swift */; };
 		3779378E1D45A33E004C86A4 /* Pods_capio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377937891D45A335004C86A4 /* Pods_capio.framework */; };
-		377E09FA1E6F5636007EA4ED /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377E09F91E6F5636007EA4ED /* CaptureSessionManager.swift */; };
-		37A596BB1E56A9C500FC6194 /* FocusZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A596BA1E56A9C500FC6194 /* FocusZoomViewController.swift */; };
 		37D63F791D45A608009CD6D9 /* CameraOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D63F781D45A608009CD6D9 /* CameraOptionsViewController.swift */; };
 		37E25FF91D32DB6D00644207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E25FF81D32DB6D00644207 /* AppDelegate.swift */; };
-		37E25FFB1D32DB6D00644207 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E25FFA1D32DB6D00644207 /* FirstViewController.swift */; };
 		37E260001D32DB6D00644207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E25FFE1D32DB6D00644207 /* Main.storyboard */; };
 		37E260021D32DB6D00644207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E260011D32DB6D00644207 /* Assets.xcassets */; };
 		37E260051D32DB6D00644207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E260031D32DB6D00644207 /* LaunchScreen.storyboard */; };
 		37E260101D32DB6D00644207 /* capioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2600F1D32DB6D00644207 /* capioTests.swift */; };
 		37E2601B1D32DB6D00644207 /* capioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2601A1D32DB6D00644207 /* capioUITests.swift */; };
+		BBBCEF9721F1789C00D6E5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7321F1789C00D6E5BE /* LaunchScreen.storyboard */; };
+		BBBCEF9821F1789C00D6E5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7421F1789C00D6E5BE /* Main.storyboard */; };
+		BBBCEF9B21F1789C00D6E5BE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7821F1789C00D6E5BE /* logo.png */; };
+		BBBCEF9E21F1789C00D6E5BE /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7C21F1789C00D6E5BE /* CaptureSessionManager.swift */; };
+		BBBCEFA021F1789C00D6E5BE /* ResolutionSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7E21F1789C00D6E5BE /* ResolutionSideMenuViewController.swift */; };
+		BBBCEFA121F1789C00D6E5BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7F21F1789C00D6E5BE /* FirstViewController.swift */; };
+		BBBCEFA221F1789C00D6E5BE /* FocusZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF8021F1789C00D6E5BE /* FocusZoomViewController.swift */; };
+		BBBCEFA421F1789C00D6E5BE /* CameraMenuContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF8221F1789C00D6E5BE /* CameraMenuContentController.swift */; };
+		BBBCEFA521F1789C00D6E5BE /* CameraMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF8321F1789C00D6E5BE /* CameraMenuTableViewCell.swift */; };
+		BBBCEFA621F1789C00D6E5BE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF8421F1789C00D6E5BE /* SecondViewController.swift */; };
 		D248C7F2536130819511982E /* Pods_capio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF1F28D4BC41D0A2EA22AC /* Pods_capio.framework */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +188,25 @@
 		5B345EA4769864ACC8156A6A /* Pods-capio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capio.release.xcconfig"; path = "Pods/Target Support Files/Pods-capio/Pods-capio.release.xcconfig"; sourceTree = "<group>"; };
 		85D4F59939712C5CE0A9A413 /* Pods-capioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-capioTests/Pods-capioTests.release.xcconfig"; sourceTree = "<group>"; };
 		B46F4BDF0C66ED3CD55E08D9 /* Pods-capioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-capioUITests/Pods-capioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBBCEF7321F1789C00D6E5BE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBBCEF7421F1789C00D6E5BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BBBCEF7521F1789C00D6E5BE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		BBBCEF7621F1789C00D6E5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBBCEF7821F1789C00D6E5BE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BBBCEF7921F1789C00D6E5BE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBBCEF7B21F1789C00D6E5BE /* RightMenuSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuSetViewController.swift; sourceTree = "<group>"; };
+		BBBCEF7C21F1789C00D6E5BE /* CaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
+		BBBCEF7D21F1789C00D6E5BE /* GridManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridManager.swift; sourceTree = "<group>"; };
+		BBBCEF7E21F1789C00D6E5BE /* ResolutionSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolutionSideMenuViewController.swift; sourceTree = "<group>"; };
+		BBBCEF7F21F1789C00D6E5BE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BBBCEF8021F1789C00D6E5BE /* FocusZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusZoomViewController.swift; sourceTree = "<group>"; };
+		BBBCEF8121F1789C00D6E5BE /* CameraOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOptionsViewController.swift; sourceTree = "<group>"; };
+		BBBCEF8221F1789C00D6E5BE /* CameraMenuContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMenuContentController.swift; sourceTree = "<group>"; };
+		BBBCEF8321F1789C00D6E5BE /* CameraMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMenuTableViewCell.swift; sourceTree = "<group>"; };
+		BBBCEF8421F1789C00D6E5BE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BBBCEF8521F1789C00D6E5BE /* MenuHostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHostView.swift; sourceTree = "<group>"; };
+		BBBCEF8621F1789C00D6E5BE /* ResolutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolutionViewController.swift; sourceTree = "<group>"; };
+		BBBCEF8721F1789C00D6E5BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5D0FBD82BC2D1AA560F09C /* Pods-capioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-capioTests/Pods-capioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DF1F28D4BC41D0A2EA22AC /* Pods_capio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -304,6 +327,7 @@
 		37E25FF71D32DB6D00644207 /* capio */ = {
 			isa = PBXGroup;
 			children = (
+				BBBCEF7121F1789C00D6E5BE /* capio */,
 				37E25FF81D32DB6D00644207 /* AppDelegate.swift */,
 				37B4194C1DB6AC750082C29C /* Controllers */,
 				37B419561DB6AC9A0082C29C /* UI */,
@@ -340,6 +364,56 @@
 				0AE02DE45CE8EB6D4AEF93DD /* Pods_capioUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBBCEF7121F1789C00D6E5BE /* capio */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEF7221F1789C00D6E5BE /* UI */,
+				BBBCEF7521F1789C00D6E5BE /* LaunchScreen.xib */,
+				BBBCEF7621F1789C00D6E5BE /* Assets.xcassets */,
+				BBBCEF7721F1789C00D6E5BE /* utils */,
+				BBBCEF7821F1789C00D6E5BE /* logo.png */,
+				BBBCEF7921F1789C00D6E5BE /* AppDelegate.swift */,
+				BBBCEF7A21F1789C00D6E5BE /* Controllers */,
+				BBBCEF8721F1789C00D6E5BE /* Info.plist */,
+			);
+			name = capio;
+			sourceTree = "<group>";
+		};
+		BBBCEF7221F1789C00D6E5BE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEF7321F1789C00D6E5BE /* LaunchScreen.storyboard */,
+				BBBCEF7421F1789C00D6E5BE /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BBBCEF7721F1789C00D6E5BE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		BBBCEF7A21F1789C00D6E5BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEF7B21F1789C00D6E5BE /* RightMenuSetViewController.swift */,
+				BBBCEF7C21F1789C00D6E5BE /* CaptureSessionManager.swift */,
+				BBBCEF7D21F1789C00D6E5BE /* GridManager.swift */,
+				BBBCEF7E21F1789C00D6E5BE /* ResolutionSideMenuViewController.swift */,
+				BBBCEF7F21F1789C00D6E5BE /* FirstViewController.swift */,
+				BBBCEF8021F1789C00D6E5BE /* FocusZoomViewController.swift */,
+				BBBCEF8121F1789C00D6E5BE /* CameraOptionsViewController.swift */,
+				BBBCEF8221F1789C00D6E5BE /* CameraMenuContentController.swift */,
+				BBBCEF8321F1789C00D6E5BE /* CameraMenuTableViewCell.swift */,
+				BBBCEF8421F1789C00D6E5BE /* SecondViewController.swift */,
+				BBBCEF8521F1789C00D6E5BE /* MenuHostView.swift */,
+				BBBCEF8621F1789C00D6E5BE /* ResolutionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +488,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = theroman;
 				TargetAttributes = {
 					37E25FF41D32DB6D00644207 = {
@@ -574,7 +648,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E260051D32DB6D00644207 /* LaunchScreen.storyboard in Resources */,
+				BBBCEF9821F1789C00D6E5BE /* Main.storyboard in Resources */,
+				BBBCEF9721F1789C00D6E5BE /* LaunchScreen.storyboard in Resources */,
 				37E260021D32DB6D00644207 /* Assets.xcassets in Resources */,
+				BBBCEF9B21F1789C00D6E5BE /* logo.png in Resources */,
 				37E260001D32DB6D00644207 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,17 +816,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D63F791D45A608009CD6D9 /* CameraOptionsViewController.swift in Sources */,
+				BBBCEFA521F1789C00D6E5BE /* CameraMenuTableViewCell.swift in Sources */,
 				3706CCA01E5D4D8300E4EC77 /* RightMenuSetViewController.swift in Sources */,
-				370B6D2C1E82B2FF00B51A1B /* ResolutionSideMenuViewController.swift in Sources */,
+				BBBCEFA021F1789C00D6E5BE /* ResolutionSideMenuViewController.swift in Sources */,
+				BBBCEF9E21F1789C00D6E5BE /* CaptureSessionManager.swift in Sources */,
+				BBBCEFA221F1789C00D6E5BE /* FocusZoomViewController.swift in Sources */,
 				3740AE211E502A24004DE9BE /* MenuHostView.swift in Sources */,
 				37E25FF91D32DB6D00644207 /* AppDelegate.swift in Sources */,
-				377E09FA1E6F5636007EA4ED /* CaptureSessionManager.swift in Sources */,
+				BBBCEFA621F1789C00D6E5BE /* SecondViewController.swift in Sources */,
+				BBBCEFA121F1789C00D6E5BE /* FirstViewController.swift in Sources */,
 				3740AE141E5001E4004DE9BE /* ResolutionViewController.swift in Sources */,
 				372D1DA21E647014006D740B /* GridManager.swift in Sources */,
-				37A596BB1E56A9C500FC6194 /* FocusZoomViewController.swift in Sources */,
-				374B45921E3C518E00BB727F /* CameraMenuTableViewCell.swift in Sources */,
-				374B45911E3C518E00BB727F /* CameraMenuContentController.swift in Sources */,
-				37E25FFB1D32DB6D00644207 /* FirstViewController.swift in Sources */,
+				BBBCEFA421F1789C00D6E5BE /* CameraMenuContentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,19 +886,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -857,19 +944,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
