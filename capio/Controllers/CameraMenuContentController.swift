@@ -23,18 +23,14 @@ class CameraMenuContentController: UITableViewController, CariocaMenuDataSource 
         iconNames.append("shutter")
         iconNames.append("iso")
         iconNames.append("temperature")
-//        iconNames.append("grid")
-//        iconNames.append("flash")
-//        iconNames.append("timer")
+        iconNames.append("rate")
         iconNames.append("close")
         
         menuNames.append("Focus")
         menuNames.append("Shutter")
         menuNames.append("Iso")
         menuNames.append("Temperature")
-//        menuNames.append("Grid")
-//        menuNames.append("Flash")
-//        menuNames.append("Timer")
+        menuNames.append("Rate Capio")
         menuNames.append("Nevermind")
     }
         
@@ -150,7 +146,9 @@ class CameraMenuContentController: UITableViewController, CariocaMenuDataSource 
     func iconForRowAtIndexPath(_ indexPath:IndexPath)->UIImage {
         var menuPinShapeIcon:UIImage = UIImage()
         
-        if (indexPath.row == menuNames.count - 1 && !isOpened) {
+        // -2 cuz Rate Capio and Nevermind buttons are the 2 last ones
+        // in menu array
+        if (indexPath.row >= menuNames.count - 2 && !isOpened) {
             menuPinShapeIcon = UIImage(named: "menu_options.png")!
         } else {
             menuPinShapeIcon = UIImage(named: "menu_\(iconNames[indexPath.row]).png")!

@@ -23,7 +23,6 @@
 		37E2601B1D32DB6D00644207 /* capioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2601A1D32DB6D00644207 /* capioUITests.swift */; };
 		BBBCEF9721F1789C00D6E5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7321F1789C00D6E5BE /* LaunchScreen.storyboard */; };
 		BBBCEF9821F1789C00D6E5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7421F1789C00D6E5BE /* Main.storyboard */; };
-		BBBCEF9B21F1789C00D6E5BE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEF7821F1789C00D6E5BE /* logo.png */; };
 		BBBCEF9E21F1789C00D6E5BE /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7C21F1789C00D6E5BE /* CaptureSessionManager.swift */; };
 		BBBCEFA021F1789C00D6E5BE /* ResolutionSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7E21F1789C00D6E5BE /* ResolutionSideMenuViewController.swift */; };
 		BBBCEFA121F1789C00D6E5BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEF7F21F1789C00D6E5BE /* FirstViewController.swift */; };
@@ -190,9 +189,7 @@
 		B46F4BDF0C66ED3CD55E08D9 /* Pods-capioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-capioUITests/Pods-capioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBBCEF7321F1789C00D6E5BE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBBCEF7421F1789C00D6E5BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BBBCEF7521F1789C00D6E5BE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BBBCEF7621F1789C00D6E5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BBBCEF7821F1789C00D6E5BE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BBBCEF7921F1789C00D6E5BE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBBCEF7B21F1789C00D6E5BE /* RightMenuSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuSetViewController.swift; sourceTree = "<group>"; };
 		BBBCEF7C21F1789C00D6E5BE /* CaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
@@ -370,10 +367,8 @@
 			isa = PBXGroup;
 			children = (
 				BBBCEF7221F1789C00D6E5BE /* UI */,
-				BBBCEF7521F1789C00D6E5BE /* LaunchScreen.xib */,
 				BBBCEF7621F1789C00D6E5BE /* Assets.xcassets */,
 				BBBCEF7721F1789C00D6E5BE /* utils */,
-				BBBCEF7821F1789C00D6E5BE /* logo.png */,
 				BBBCEF7921F1789C00D6E5BE /* AppDelegate.swift */,
 				BBBCEF7A21F1789C00D6E5BE /* Controllers */,
 				BBBCEF8721F1789C00D6E5BE /* Info.plist */,
