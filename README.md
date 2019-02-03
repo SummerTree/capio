@@ -42,6 +42,8 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   
 ### TODO:
   - back to all auto mode
+  - save user settings
+  - UI\Unit tests (help needed)
   - 3d motion feature point tracking
   - inApp tutorial (maybe)
   - better notifications and UI response feedback
