@@ -40,17 +40,22 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   - grid toggle and quad grid
   - camera timer (3x, 10x)
   
-### TODO:
-  - back to all auto mode
+### TODO release 1.0.5:
   - save user settings
+  - switch back to all auto shortcut button
+  - some bug fixing (per crash reports)
+  
+### TODO:
+  - pixel shader implementation -> reflection shader
   - UI\Unit tests (help needed)
   - 3d motion feature point tracking
-  - inApp tutorial (maybe)
   - better notifications and UI response feedback
   - torch mode on-off
   - TimeLapse
   - HDR
   - Live
   - settings presets
+  - gyroscope/level grid
   - app's fast access from phone's widgets view (if that's even possible?)
   - AppleWatch support (remote photo app control)
+  - inApp tutorial (maybe)
