@@ -2,6 +2,9 @@
 Photo/Video iphone app that gives full control over camera back to users
 no bulshit ads, promotions or social integration, just pure camera with extended manual/auto functions
 
+# Please support me on continuing developing this app and sharing the code:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2KK97H75UCY7C&item_name=to+support+free+software+development&currency_code=USD&source=url)
+
 # in AppStore (search for Capio):
   https://itunes.apple.com/us/app/cap-io/id1209620433?mt=8
 
