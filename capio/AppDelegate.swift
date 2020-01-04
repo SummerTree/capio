@@ -18,13 +18,78 @@ extension Double {
 }
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let firstViewController = mainStoryboard.instantiateViewController(withIdentifier: "FirstViewController")
+        self.window!.rootViewController = firstViewController
+        self.window!.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        self.window!.makeKeyAndVisible()
+        
+        // logo mask
+        firstViewController.view.layer.mask = CALayer()
+        firstViewController.view.layer.mask?.contents = UIImage(named: "cio_inapp_ico_new")!.cgImage
+        firstViewController.view.layer.mask?.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
+        firstViewController.view.layer.mask?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        firstViewController.view.layer.mask?.position = CGPoint(x: firstViewController.view.frame.width / 2, y: firstViewController.view.frame.height / 2)
+
+        // logo mask background view
+        let maskBgView = UIView(frame: firstViewController.view.frame)
+        maskBgView.backgroundColor = UIColor.white
+        firstViewController.view.addSubview(maskBgView)
+        firstViewController.view.bringSubview(toFront: maskBgView)
+
+        // logo mask animation
+        let transformAnimation = CAKeyframeAnimation(keyPath: "bounds")
+        transformAnimation.delegate = self
+        transformAnimation.duration = 1
+        transformAnimation.beginTime = CACurrentMediaTime() + 1 //add delay of 1 second
+        let initalBounds = NSValue(cgRect: (firstViewController.view.layer.mask?.bounds)!)
+        let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let thirdBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 50, height: 50))
+        let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 5000, height: 5000))
+        transformAnimation.values = [initalBounds, secondBounds, thirdBounds, finalBounds]
+        transformAnimation.keyTimes = [0, 0.3, 0.6, 1]
+        transformAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        transformAnimation.isRemovedOnCompletion = false
+        transformAnimation.fillMode = kCAFillModeForwards
+        firstViewController.view.layer.mask?.add(transformAnimation, forKey: "maskAnimation")
+
+        // logo mask background view animation
+        UIView.animate(withDuration: 0.1,
+                       delay: 1.35,
+                       options: UIViewAnimationOptions.curveEaseIn,
+                       animations: {
+                        maskBgView.alpha = 0.0
+                       },
+                       completion: { finished in
+                        maskBgView.removeFromSuperview()
+                       })
+
+        // root view animation
+        UIView.animate(withDuration: 0.25,
+                       delay: 1.3,
+                       options: [],
+                       animations: {
+                        self.window!.rootViewController!.view.transform = CGAffineTransform(scaleX: 1.0005, y: 1.0005)
+                       },
+                       completion: { finished in
+                        UIView.animate(withDuration: 0.3,
+                                       delay: 0.0,
+                                       options: UIViewAnimationOptions.curveEaseInOut,
+                                       animations: {
+                                        self.window!.rootViewController!.view.transform = .identity
+                                       },
+                                       completion: { finished in firstViewController.view.layer.mask = nil})
+        })
+        
         return true
     }
 

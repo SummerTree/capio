@@ -113,16 +113,8 @@ class FirstViewController:
         super.viewDidAppear(animated)
 
         optionsMenu?.addInView(self.view)
-        if isAppUsable {
-            Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {_ in
-                self.optionsMenu?.showIndicator(.right, position: .bottom, offset: -50)
-            })
-            
-        } else {
-            optionsMenu?.showIndicator(.right, position: .bottom, offset: 50)
-        }
 
-        gridManager = GridManager.init(_gridView: gridHostView, _storyBoard: self.storyboard!, _parentViewDimentions: gridHostView.bounds)
+        gridManager = GridManager.init(gridView: gridHostView, storyBoard: self.storyboard!, parentViewDimensions: gridHostView.bounds)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -218,6 +210,7 @@ class FirstViewController:
     }
 
     func onAppBackgroundStateEnter() {
+        print("[onAppBackgroundStateEnter] start")
         onDispose()
     }
 
@@ -409,8 +402,16 @@ class FirstViewController:
     }
 
     private func onDispose() {
+        print("[onDispose] disposing")
         self.captureSessionManager.onSessionDispose()
-
+        
+        //cuz zoomView has a bounce timer
+        //and order here MATTERS. MUST be before
+        //the for loop bellow
+        self.focusZoomView?.immediateReset()
+        
+        //must ALWAY go last. Release all other resources before
+        //this for loop
         if let layers = myCamView.layer.sublayers as [CALayer]? {
             for layer in layers  {
                 layer.removeFromSuperlayer()
@@ -532,7 +533,7 @@ class FirstViewController:
             self.enablePermsView.isHidden = true
 
             if (self.optionsMenu?.hostView != nil) {
-                Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {_ in
+                Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {[unowned self] _ in
                     self.optionsMenu?.showIndicator(.right, position: .bottom, offset: -50)
                 })
             }
@@ -622,7 +623,7 @@ class FirstViewController:
             case "orientationRawState":
                 self.captureSessionManager.onLockUnLockOrientation((self.cameraSecondaryOptions?.orientationState)! as OrientationStates)
             case "gridRawState":
-                switch (self.cameraSecondaryOptions?.gridState)! as GridFactors {
+                switch (self.cameraSecondaryOptions?.gridState)! as GridFactor {
                 case .off:
                     gridManager.gridFactor = .off
                 case .double:

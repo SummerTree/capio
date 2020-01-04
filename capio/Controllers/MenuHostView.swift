@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class MenuHostView: SharedBlurView {
     
@@ -27,10 +28,10 @@ class MenuHostView: SharedBlurView {
         
         switch activeMenuType {
         case .cameraSliderMenu:
-            addSubview(activeSubview!)
+            self.contentView.addSubview(activeSubview!)
             break
         case .resolutionMenu:
-            addSubview(activeSubview!)
+            self.contentView.addSubview(activeSubview!)
         default:
             break
         }
@@ -60,6 +61,7 @@ class MenuHostView: SharedBlurView {
     func setCameraSliderViewControllerForIndex(_ index:Int, callbackToOpenMenu: () -> Void){
         var activeSliderPresent: Bool = false
         
+            //TODO: refactor to actual menu names with enum
             switch index {
                 
             case 0:
@@ -77,6 +79,15 @@ class MenuHostView: SharedBlurView {
             case 3:
                 (self.activeSubviewController as! CameraOptionsViewController).setActiveSlider(CameraOptionsTypes.temperature)
                 activeSliderPresent = true
+                break
+            case 4:
+                if #available( iOS 10.3,*){
+                    SKStoreReviewController.requestReview()
+                } else {
+                    let url = URL(string: "itms-apps://itunes.apple.com/app/id1209620433")!
+                    UIApplication.shared.open(url)
+                }
+                unsetActiveMenu()
                 break
             default:
                 unsetActiveMenu()

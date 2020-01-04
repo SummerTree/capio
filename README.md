@@ -2,6 +2,12 @@
 Photo/Video iphone app that gives full control over camera back to users
 no bulshit ads, promotions or social integration, just pure camera with extended manual/auto functions
 
+# Please support me on continuing developing this app and sharing the code:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2KK97H75UCY7C&item_name=to+support+free+software+development&currency_code=USD&source=url)
+
+# in AppStore (search for Capio):
+  https://itunes.apple.com/us/app/cap-io/id1209620433?mt=8
+
 ![Alt text](/capio_ico_ArtWrk150x150.png "app_ico_art")
 
 ![Alt text](/capio.png?raw=true "in_app_screen")
@@ -12,10 +18,9 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   pod install --verbose
 ```
 ### Current Status:
-  - currently project is on hold due to busy schedule I have with other business.
+  31-12-18
+  - restored app's working state 
   - any contribution is welcomed :)
-  - app currently is crashing on lates ios due to last update to version >= ^11.0
-  - will get back to it first thing once I'm free from other duties
 
 ### Current Features List:
   - manually change at any given point following settings:
@@ -38,12 +43,22 @@ no bulshit ads, promotions or social integration, just pure camera with extended
   - grid toggle and quad grid
   - camera timer (3x, 10x)
   
+### TODO release 1.0.5:
+  - save user settings
+  - switch back to all auto shortcut button
+  - some bug fixing (per crash reports)
+  
 ### TODO:
+  - pixel shader implementation -> reflection shader
+  - UI\Unit tests (help needed)
+  - 3d motion feature point tracking
+  - better notifications and UI response feedback
   - torch mode on-off
   - TimeLapse
   - HDR
   - Live
-  - inApp tutorial 
-  - better notifications and UI response feedback
   - settings presets
-  - app's fast access from phone's widgets view
+  - gyroscope/level grid
+  - app's fast access from phone's widgets view (if that's even possible?)
+  - AppleWatch support (remote photo app control)
+  - inApp tutorial (maybe)

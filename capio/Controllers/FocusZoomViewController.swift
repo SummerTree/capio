@@ -10,7 +10,7 @@ import UIKit
 
 class FocusZoomViewController: UIViewController {
     
-    @IBOutlet var blurView: UIVisualEffectView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
     var bounceTimer: Timer!
     
@@ -34,25 +34,32 @@ class FocusZoomViewController: UIViewController {
     
     func appear() {
         self.view.alpha = 0
-        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseInOut, animations: { [unowned self] in
             self.view.alpha = 1
         })
     }
 
     func disolveToRemove() {
-        UIView.animate(withDuration: 0.6, delay: 0.2, options: .curveEaseInOut, animations: {
-            self.view.alpha = 0.1
-        }) { _ in
-            self.resetView()
-        }
+        UIView.animate(
+            withDuration: 0.6,
+            delay: 0.2, options: .curveEaseInOut,
+            animations: { [unowned self] in 
+                self.view.alpha = 0.1
+        }) { [unowned self] _ in
+                print("[FocusZoomViewController][disolveToRemove] removing timer")
+                self.resetView()
+            }
+    }
+    
+    func immediateReset() {
+        print("[FocusZoomViewController][immediateReset] removing timer")
+        self.resetView()
     }
     
     func disolve() {
-        bounceTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true, block: { (timer) in
-            UIView.animate(withDuration: 0.2, delay: 0.2, options: .curveEaseInOut, animations: {
-                if self.view != nil {
-                    self.view.alpha = floor(10*self.view.alpha) == 2 ? 0.45 : 0.2;
-                }
+        self.bounceTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [unowned self] (timer) in
+            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+                self.view?.alpha = floor(10*self.view.alpha) == 2 ? 0.45 : 0.2;
             })
         })
     }
@@ -62,7 +69,6 @@ class FocusZoomViewController: UIViewController {
             bounceTimer.invalidate()
             bounceTimer = nil
         }
-
         self.view.removeFromSuperview()
         self.view.alpha = 1
     }
